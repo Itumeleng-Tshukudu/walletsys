@@ -10,7 +10,7 @@ app.use(express.static('public'));
 
 app.use('/api/wallet', walletRoutes);
 
-mongoose.connect(process.env.MONGODB_URI, {
+mongoose.connect(process.env.MONGODB_URI(mongodb+srv://itumelengdev:<Blazer@101>@cluster0.mylgzfj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0), {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 }).then(() => {
